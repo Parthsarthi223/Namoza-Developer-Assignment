@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OrthoNow | Book Your Orthopaedic Consultation</title>
+
+<meta name="description" content="Get an expert orthopaedic opinion from experienced specialists across 9 clinics in Bengaluru, Hyderabad & Chennai.">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f5f8fb;
+color:#222;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+header{
+background:#005f99;
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+header p{
+font-size:1.2rem;
+max-width:700px;
+margin:auto;
+}
+
+.hero{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+align-items:center;
+padding:60px 0;
+}
+
+.hero-content{
+flex:1;
+min-width:300px;
+}
+
+.hero-content h2{
+font-size:2rem;
+margin-bottom:20px;
+color:#005f99;
+}
+
+.hero-content p{
+margin-bottom:20px;
+font-size:18px;
+}
+
+.features{
+margin-top:25px;
+}
+
+.features li{
+margin-bottom:12px;
+list-style:none;
+}
+
+.features li::before{
+content:"✔ ";
+color:green;
+font-weight:bold;
+}
+
+.form-card{
+flex:1;
+min-width:320px;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.form-card h3{
+text-align:center;
+margin-bottom:20px;
+color:#005f99;
+}
+
+input{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:16px;
+border:none;
+background:#0077cc;
+color:white;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#005fa3;
+}
+
+.trust{
+background:white;
+padding:60px 0;
+}
+
+.trust h2{
+text-align:center;
+margin-bottom:40px;
+color:#005f99;
+}
+
+.trust-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:#f8fbff;
+padding:25px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+font-size:32px;
+color:#0077cc;
+margin-bottom:10px;
+}
+
+.reviews{
+padding:60px 0;
+}
+
+.review-box{
+background:white;
+padding:25px;
+margin-bottom:20px;
+border-left:5px solid #0077cc;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.cta{
+background:#005f99;
+padding:60px 20px;
+color:white;
+text-align:center;
+}
+
+.cta h2{
+margin-bottom:20px;
+}
+
+footer{
+background:#003d63;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+#thankyou{
+display:none;
+padding:30px;
+text-align:center;
+background:#eafbea;
+border-radius:10px;
+}
+
+#thankyou h2{
+color:green;
+margin-bottom:15px;
+}
+
+small{
+display:block;
+margin-top:10px;
+color:#666;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:2rem;
+}
+
+.hero{
+flex-direction:column;
+}
+
+.hero-content h2{
+font-size:1.6rem;
+}
+
+button{
+font-size:16px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<h1>Get Expert Orthopaedic Care Without the Wait</h1>
+
+<p>
+Book your consultation with experienced orthopaedic specialists at OrthoNow.
+Trusted by thousands of patients across Bengaluru, Hyderabad, and Chennai.
+</p>
+
+</div>
+
+</header>
+
+<section class="container hero">
+
+<div class="hero-content">
+
+<h2>Back Pain? Knee Pain? Get Expert Advice Today.</h2>
+
+<p>
+
+Don't let pain affect your work or daily life.
+Our specialists diagnose and treat joint, knee, shoulder, spine and sports injuries with personalized treatment plans.
+
+</p>
+
+<ul class="features">
+
+<li>9 Modern Orthopaedic Clinics</li>
+
+<li>Experienced Orthopaedic Specialists</li>
+
+<li>Same-Day Appointments Available</li>
+
+<li>Trusted by 15,000+ Happy Patients</li>
+
+<li>Easy Consultation Booking</li>
+
+</ul>
+
+</div>
+
+<div class="form-card">
+
+<h3>Book Your Consultation</h3>
+
+<form id="consultationForm">
+
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+required>
+
+<input
+type="tel"
+id="phone"
+placeholder="Phone Number"
+required>
+
+<button type="submit">
+
+Book Consultation
+
+</button>
+
+<small>
+
+We'll call you within 30 minutes.
+
+</small>
+
+</form>
+
+<div id="thankyou">
+
+<h2>Thank You!</h2>
+
+<p>
+
+Your consultation request has been received.
+
+Our care team will contact you shortly.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="trust">
+
+<div class="container">
+
+<h2>Why Patients Trust OrthoNow</h2>
+
+<div class="trust-grid">
+
+<div class="card">
+
+<h3>9</h3>
+
+<p>Clinics Across South India</p>
+
+</div>
+
+<div class="card">
+
+<h3>50+</h3>
+
+<p>Experienced Specialists</p>
+
+</div>
+
+<div class="card">
+
+<h3>15K+</h3>
+
+<p>Happy Patients</p>
+
+</div>
+
+<div class="card">
+
+<h3>4.8★</h3>
+
+<p>Average Patient Rating</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="reviews">
+
+<div class="container">
+
+<h2 style="text-align:center;margin-bottom:40px;color:#005f99;">
+Patient Reviews
+</h2>
+
+<div class="review-box">
+
+<strong>★★★★★ Priya S.</strong>
+
+<p>
+
+"My knee pain improved dramatically after treatment.
+The doctors were professional and explained every step."
+
+</p>
+
+</div>
+
+<div class="review-box">
+
+<strong>★★★★★ Rahul K.</strong>
+
+<p>
+
+"Easy booking process, excellent care, and friendly staff.
+Highly recommended."
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+
+Take the First Step Toward Pain-Free Living
+
+</h2>
+
+<p style="margin-bottom:25px;">
+
+Book your consultation today and receive expert guidance from our orthopaedic specialists.
+
+</p>
+
+<button onclick="document.getElementById('name').focus()">
+
+Book Consultation Now
+
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 OrthoNow Healthcare. All Rights Reserved.
+
+</footer>
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+const form = document.getElementById("consultationForm");
+const thankyou = document.getElementById("thankyou");
+
+form.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+const name=document.getElementById("name").value.trim();
+const phone=document.getElementById("phone").value.trim();
+
+if(name==="" || phone===""){
+
+alert("Please fill in all fields.");
+
+return;
+
+}
+
+if(!/^[6-9]\d{9}$/.test(phone)){
+
+alert("Please enter a valid 10-digit mobile number.");
+
+return;
+
+}
+
+/* ---------- GTM Data Layer Push ---------- */
+
+window.dataLayer.push({
+    event: "consultation_form_submitted",
+    patient_name: name,
+    phone_number: phone,
+    clinic_preference: "Bengaluru",
+    source: "Google Ads - Consultation Landing Page",
+    page_location: window.location.pathname,
+    submission_time: new Date().toISOString()
+});
+
+console.log("Data Layer:",window.dataLayer);
+
+/* ---------- Show Thank You State ---------- */
+
+form.style.display="none";
+
+thankyou.style.display="block";
+
+});
+
+/* ---------- CTA Button ---------- */
+
+document.querySelector(".cta button").addEventListener("click",function(){
+
+document.getElementById("name").focus();
+
+window.scrollTo({
+
+top:document.querySelector(".form-card").offsetTop-20,
+
+behavior:"smooth"
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
